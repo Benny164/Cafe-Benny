@@ -1,0 +1,278 @@
+/* ===== Allgemeine Einstellungen ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #f5e8d3;
+    color: #3d2b1f;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Logo ===== */
+a.logo {
+    display: block;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+
+img.logo {
+    height: 350px;
+    width: auto;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+img.logo:hover {
+    transform: scale(1.03);
+}
+
+/* ===== Navigation ===== */
+.navigation {
+    background-color: #a67c52;
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #f5e8d3;
+    text-decoration: underline;
+}
+
+/* ===== Kopfbereich (Start) ===== */
+.kopfbereich {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.kopfbereich h1 {
+    font-size: 2.8rem;
+    color: #3d2b1f;
+    margin-bottom: 10px;
+}
+
+.kopfbereich p {
+    font-size: 1.3rem;
+    color: #5c4033;
+    margin-bottom: 25px;
+}
+
+.titelbild {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+}
+
+/* ===== Buttons ===== */
+.button {
+    display: inline-block;
+    background-color: #6f4e37;
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(111, 78, 55, 0.3);
+}
+
+.button:hover {
+    background-color: #5a3e2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(111, 78, 55, 0.4);
+}
+
+/* ===== Abschnitte allgemein ===== */
+.bereich {
+    background-color: white;
+    padding: 40px 35px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.bereich h2 {
+    font-size: 1.9rem;
+    color: #6f4e37;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e8d9c5;
+    padding-bottom: 12px;
+}
+
+.bereich p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* ===== Tabellen ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #faf6f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+th {
+    background-color: #6f4e37;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f1e9df;
+}
+
+tr:hover {
+    background-color: #e8d9c5;
+}
+
+/* ===== Listen ===== */
+ul, ol {
+    margin: 15px 0 15px 30px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ===== Galerie ===== */
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.galerie div {
+    text-align: center;
+    max-width: 320px;
+}
+
+.galerie img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galerie img:hover {
+    transform: scale(1.04);
+}
+
+.galerie p {
+    margin-top: 12px;
+    font-weight: 500;
+    color: #5c4033;
+}
+
+/* ===== Kontakt ===== */
+.kontakt p {
+    text-align: center;
+}
+
+.kontakt .button {
+     display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #6f4e37;
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(111, 78, 55, 0.3);
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    padding: 30px 0 40px 0;
+    color: #5c4033;
+}
+
+.zurueck-button {
+    display: inline-block;
+    background-color: #a67c52;
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.zurueck-button:hover {
+    background-color: #8b6844;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* ===== Responsiv (Handy) ===== */
+@media (max-width: 700px) {
+    img.logo {
+        height: 120px;
+    }
+
+    .navigation a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .kopfbereich h1 {
+        font-size: 2.2rem;
+    }
+
+    .bereich {
+        padding: 30px 20px;
+    }
+
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+    }
+}
